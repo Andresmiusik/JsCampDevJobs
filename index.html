@@ -3,19 +3,20 @@
 <html lang="es"> <!--Etiqueta Raiz -->
 
 <head> <!--Etiqueta para METADATOS -->
-
     <title>DevJobs - Inicio</title>
     <meta charset="UTF-8">  
     <meta name="description" content="Descripción de la página Web.">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
 
     <header> 
-        <h2>DevJobs</h2>
+        <h2><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(17, 115, 212)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-elastic"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 2a5 5 0 0 1 5 5c0 .712 -.232 1.387 -.5 2c1.894 .042 3.5 1.595 3.5 3.5c0 1.869 -1.656 3.4 -3.5 3.5c.333 .625 .5 1.125 .5 1.5a2.5 2.5 0 0 1 -2.5 2.5c-.787 0 -1.542 -.432 -2 -1c-.786 1.73 -2.476 3 -4.5 3a5 5 0 0 1 -4.583 -7a3.5 3.5 0 0 1 -.11 -6.992l.195 0a2.5 2.5 0 0 1 2 -4c.787 0 1.542 .432 2 1c.786 -1.73 2.476 -3 4.5 -3z" /><path d="M8.5 9l-3 -1" /><path d="M9.5 5l-1 4l1 2l5 2l4 -4" /><path d="M18.499 16l-3 -.5l-1 -2.5" /><path d="M14.5 19l1 -3.5" /><path d="M5.417 15l4.083 -4" /></svg> DevJobs</h2>
         <nav>
-            <a href="">Inicio</a>
-            <a href="./trabajos.html">Empleos</a>
+            <a href="./pages/trabajos.html">Empleos</a>
+            <a href="">Empresas</a>
+            <a href="">Salarios</a>
         </nav>
         <div>
             <a href="">Publicar Empleo</a>
@@ -24,13 +25,15 @@
     </header>
     <main> 
      <section>
-           <img src="./background.webp" width="200">
+        <img src="/img/background.webp" width="200">
         <h1>Encuentra el trabajo de tus sueños</h1>
-        <p>Unite a una gran comunidad</p>
+        <p>Únete a una gran comunidad</p>
         <form action="search">
+         <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3c39f9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
             <input required type="text" placeholder="Buscar empleos">
             <button type="submit">Buscar</button>
+            </div>
         </form>
      </section>
 

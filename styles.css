@@ -1,50 +1,84 @@
+:root{
+    --background: #111923;
+    --text-primary: white;
+    --text-hover: #0f2a44;
+    --primary-hover: #1173d4;
+    --icon-primary: #1173d4;
+}
+
 body{
-background-color: rgba(17, 25, 35);
-color: white;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background);
+    color: var(--text-primary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #1b2431;
 }
 
 nav{
     padding: 10px;
-    border-bottom: 1px solid #1b2431;
-}
-
-nav h2 {
-    display: inline;
-}
-
-.urlnav{
-    justify-content: space-between;
     align-items: center;
-    color: white;
+    display: flex;
+
+    a{
+    color: var(--text-primary);
     text-decoration: none;
     margin-left: 15px;
+        &:hover{
+        color: var(--primary-hover);
+        align-items: center;
+    }   
+
+    }
 }
 
-.urlnav:hover{
-    color: rgba(17, 115, 212);
-    align-items: center;
-}
-
-.cvnav{
+header div a{
     text-decoration: none;
-    color: rgba(17, 115, 212);
-    background-color: #0f2a44;
+    color: var(--primary-hover);
+    background-color: var(--text-hover);
     padding: 8px;
     border-radius: 10px;
-    
+    display: inline-block;
+    &:hover{
+        text-decoration: none;
+        background-color: var(--primary-hover);
+        color: var(--text-hover);
+        padding: 8px;
+        border-radius: 10px;
+    }
 }
 
-.cvnav:hover{
-    text-decoration: none;
-    background-color: rgba(17, 115, 212);
-    color: #0f2a44;
-    padding: 8px;
-    border-radius: 10px;
+
+svg{
+    background-image: red;
+    stroke: var(--icon-primary);
 }
 
 .search-job{
     text-align: center;
+}
+
+main > section:nth-child(1){
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & > img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        mask-image: linear-gradient(to bottom, rgba(16, 25, 34, 1) 5%, rgba(16, 25, 34, 0) 80%);
+    }
 }
 
 input{
@@ -56,10 +90,11 @@ input{
 }
 
 select{
-    color: white;
+    color: var(--text-primary);
     background-color: #242d3a;
     padding: 10px;
     margin-top: 10px;
     border: 0;
     border-radius: 10px;
 }
+
