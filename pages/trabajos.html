@@ -21,16 +21,16 @@
                     <a href="">Subir CV</a>
             </div>
         </header>
-
-
         <section class="search-job">
+            <section>
             <h1>Encuentra tu próximo trabajo</h1>
             <p>Explora miles de oportunidades en el sector técnológico.</p>
+            </section>
             <form action="search">
-                <section class="input-job">
+                <div class="search-bar">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
                 <input type="text" placeholder="Busca trabajos, empresas o habilidades">
-                </section>
+                </div>
                 <section>
                 <select name="tecnologia" id="tecnologia">
                     <option value="">Tecnologia</option>
@@ -61,9 +61,42 @@
             </form>
         </section>
 
-        <section>
-            <h3>Resultado de búsqueda</h3>
-            <!--Aquí va el contenido-->
+        <section class="job">
+            <h2>Resultado de búsqueda</h2>
+            <div class="job-list">
+                <article class="job-list-card">
+                    <div>
+                        <h3>Ingeniero de Sistemas</h3>
+                        <small>Google | Remoto</small>
+                        <p>Se busca ingeniero de sistemas para brindar apoyo y soporte a los demás colaboradores</p>
+                    </div>
+                    <button>Aplicar</button>
+                </article>
+                <article class="job-list-card">
+                    <div>
+                        <h3>Ingeneniero de Software</h3>
+                        <small>Amazon | Presencial</small>
+                        <p>Se busca ingeniero de software para el desarrollo de aplicaciones en Power Plataform</p>
+                    </div>
+                    <button>Aplicar</button>
+                </article>
+                <article class="job-list-card">
+                    <div>
+                        <h3>Desarrollador de Aplicaciones</h3>
+                        <small>Meta | Miami</small>
+                        <p>Se busca desarrollador de aplicaciones para el desarrollo de aplicaciones corporativas en dispositivos moviles.</p>
+                    </div>
+                    <button>Aplicar</button>
+                </article>
+                <article class="job-list-card">
+                    <div>
+                        <h3>Inveniero de IA</h3>
+                        <small>Open IA | Remoto</small>
+                        <p>Se busca ingeniero de IA caza de superar la mente humana</p>
+                    </div>
+                    <button>Aplicar</button>
+                </article>
+            </div>
         </section>
     </body>
 </html>

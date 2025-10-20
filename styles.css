@@ -135,28 +135,13 @@ form > div {
     }
 }
 
-form input{
-    background: transparent;
-    color:var(--text-primary);
-    border: none;
-    outline: none;
-    flex: 1;
-    padding: 0,75rem 0.5rem;
-    font-size: 1rem;
-}
+
 
 form input[type="text"]::placeholder {
   color: #64748b;
 }
 
-select{
-    color: var(--text-primary);
-    background-color: #242d3a;
-    padding: 10px;
-    margin-top: 10px;
-    border: 0;
-    border-radius: 10px;
-}
+
 
 main > section:nth-child(2){
     
@@ -205,3 +190,70 @@ main + footer{
     border-top: 1px solid var(--primary);
     margin-top: 10px;
 }
+
+  select{
+    color: var(--text-primary);
+    background-color: #242d3a;
+    padding: 10px;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.search-job{
+    & section{
+        margin: 3rem    3rem;
+
+        h1{
+            font-size: 2em;
+        }
+    }
+}
+
+.search-bar{
+    background-color: var(--input-bg);
+    input{
+    background: transparent;
+    color:var(--text-primary);
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 0,75rem 0.5rem;
+    font-size: 1rem;
+    }
+}
+
+
+.job-list{
+    border:2px solid var(--primary);
+    margin: 2rem 10% 2rem 10%;
+    border-radius: 15px;
+    div{
+    width: 95%;
+    }
+    article{
+        display: flex;
+        padding: 30px;
+        gap: 1rem;
+        margin: 0;
+        border-bottom: 2px solid var(--primary);;
+        
+    &:last-child{
+        border-bottom: none;
+   
+    }
+    
+    }
+    button{
+        color: var(--text-primary);
+        background-color: #1173d4;
+        border-radius: 10px;
+        border: none;
+        width: 100px;
+        height: 50px
+    }
+    small{
+        opacity: .75;
+    }
+}
+
