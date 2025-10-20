@@ -40,7 +40,7 @@ nav{
     a{
     color: var(--text-primary);
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: 20px;
         &:hover{
         color: var(--primary-hover);
         align-items: center;
@@ -54,6 +54,7 @@ header div a{
     color: var(--primary-hover);
     background-color: var(--text-hover);
     padding: 8px;
+    margin: 0.5rem;
     border-radius: 10px;
     display: inline-block;
     &:hover{
@@ -91,11 +92,15 @@ main > section:nth-child(1){
     }
 }
 
-input{
-    height: 24px;
-    width: 80%;
+.job-search{
     background-color: var(--input-bg);
-    border: 1px solid #111822;
+}
+
+input{
+    height: 40px;
+    width: 80%;
+    background-color: transparent;
+    border: none;
     border-radius: 10px;
 }
 
@@ -184,7 +189,7 @@ article{
 }
 }
 
-main + footer{
+body > footer{
     opacity: .50;
     text-align: center;
     border-top: 1px solid var(--primary);
