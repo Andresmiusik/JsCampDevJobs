@@ -190,6 +190,7 @@ article{
 }
 
 body > footer{
+    padding: 1rem 0 1rem 0;
     opacity: .50;
     text-align: center;
     border-top: 1px solid var(--primary);
